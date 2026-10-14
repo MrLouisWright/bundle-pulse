@@ -1,0 +1,54 @@
+{
+  "name": "bundle-pulse",
+  "version": "1.0.0",
+  "description": "CI gate for JS/CSS bundle size: per-entry budgets on raw, gzip and brotli sizes, total JS/CSS budgets, growth vs a base-branch snapshot with content-hash-insensitive names, unminified and duplicate files. SARIF, Markdown, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "bundle-pulse": "bin/bundle-pulse.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "bundle-size",
+    "performance",
+    "budget",
+    "gzip",
+    "brotli",
+    "webpack",
+    "vite",
+    "ci",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/bundle-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/bundle-pulse/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/bundle-pulse#readme"
+}

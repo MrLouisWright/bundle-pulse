@@ -1,0 +1,17 @@
+{
+  "budgets": [
+    {
+      "path": "assets/index-*.js",
+      "gzip": "8 KB"
+    },
+    {
+      "path": "assets/app-*.css",
+      "gzip": "6 KB"
+    },
+    {
+      "path": "assets/admin-*.js",
+      "gzip": "20 KB"
+    }
+  ],
+  "totalJs": "30 KB"
+}

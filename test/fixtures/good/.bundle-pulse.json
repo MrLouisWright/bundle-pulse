@@ -1,0 +1,19 @@
+{
+  "budgets": [
+    {
+      "path": "assets/index-*.js",
+      "gzip": "30 KB",
+      "brotli": "25 KB"
+    },
+    {
+      "path": "assets/vendor-*.js",
+      "gzip": "60 KB"
+    },
+    {
+      "path": "assets/*.css",
+      "gzip": "10 KB"
+    }
+  ],
+  "totalJs": "100 KB",
+  "totalCss": "20 KB"
+}
