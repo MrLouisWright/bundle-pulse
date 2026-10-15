@@ -1,5 +1,7 @@
 # bundle-pulse
 
+[![npm version](https://img.shields.io/npm/v/bundle-pulse.svg)](https://www.npmjs.com/package/bundle-pulse) [![CI](https://github.com/MrLouisWright/bundle-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/bundle-pulse/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/bundle-pulse.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > A CI gate for JavaScript and CSS bundle size: budgets on raw, gzip and brotli sizes, and a diff against your base branch.
 
 Bundles grow one innocent import at a time. `bundle-pulse` measures every JS and CSS file in your build output the way browsers receive it (gzip and brotli as well as raw), checks each file against the budget for its glob, checks total JS and CSS, and compares against a snapshot from the base branch so a pull request that adds 40 kB to the main chunk fails with a clear message. Content hashes in file names (`index-BdT9x2Qa.js`, `main.3f2a9c1b.chunk.js`) are stripped when comparing, so the diff follows the entry, not the file name.
