@@ -174,11 +174,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev bundle-pulse
+```
+
 ```js
 import { scan, analyze, normaliseBudgets } from "bundle-pulse";
 const files = scan("dist");
 const findings = analyze(files, { budgets: normaliseBudgets({ "assets/index-*.js": "60 KB" }) });
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("bundle-pulse")` from CommonJS.
 
 Types are included.
 
